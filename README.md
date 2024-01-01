@@ -4,11 +4,13 @@
 
 1. forge init(to start a project with all you need)
 2. When you need an interface from chainlink here is how to install it from smartcontractkit brownie
+   --
 `forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit`
+---
 if you face submodel 128 error do this
- switch to faster network and then 
-git config --global http.postBuffer 524288000 and then
-git gc --aggressive
+ - switch to faster network and then 
+ - `git config --global http.postBuffer 524288000` and then
+ - `git gc --aggressive`
 
 example of interfaces will be aggregatorV3Interfaces that help connect to price feeds from chainlink when you pass the address, more reading here; https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1
 
