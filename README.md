@@ -4,7 +4,7 @@
 
 1. forge init(to start a project with all you need)
 2. When you need an interface from chainlink here is how to install it from smartcontractkit brownie
-forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
+`forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit`
 if you face submodel 128 error do this
  switch to faster network and then 
 git config --global http.postBuffer 524288000 and then
