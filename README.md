@@ -27,3 +27,16 @@ It is inside the script.sol that we get to use
 // our contract goes here
     vm.stopBroadcast();
 ```
+---
+#### These are cheatcodes of foundry
+find more at https://book.getfoundry.sh/forge/cheatcodes.
+
+
+When you create an .env you have to type source .env in the terminal
+
+To access the most recently deployed contract in yr vscode, you will need to install foundry devops; `forge install ChainAccelOrg/foundry-devops --no-commit` and then import `import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";`
+
+SCRIPTING
+We use solidity to run script in foundry, you import as said above and then put this in your terminal to run it
+`forge script script/YOurscript.s.sol:TARGETFUNCTION --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast` 
+REMEMBER TO REPLAVE THE RIGHT CONTRACT AND FUNCTION
