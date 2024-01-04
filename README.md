@@ -36,6 +36,9 @@ When you create an .env you have to type source .env in the terminal
 
 To access the most recently deployed contract in yr vscode, you will need to install foundry devops; `forge install ChainAccelOrg/foundry-devops --no-commit` and then import `import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";`
 
+Testing can be hard but we can use this command to see which line we havent tested
+`forge coverage --report debug > coverage.txt`
+
 SCRIPTING
 We use solidity to run script in foundry, you import as said above and then put this in your terminal to run it
 `forge script script/YOurscript.s.sol:TARGETFUNCTION --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast` 
